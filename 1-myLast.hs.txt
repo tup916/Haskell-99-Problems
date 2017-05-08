@@ -1,0 +1,5 @@
+myLast [] = error "The list is empty"
+
+myLast (x:[]) = x
+
+myLast (x:xs) = myLast xs
